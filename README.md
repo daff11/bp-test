@@ -35,7 +35,7 @@ Projek backend API dengan fungsi melakukan create, read, update, dan delet pada 
 
 3. Impor file bp_test.sql ke local database MySQL
    Lokasi file ada di root folder
-   *Catatan: tidak perlu membuat tabel secara manual karena sudah disediakan fitur sequelize.sync()
+   # Catatan: tidak perlu membuat tabel secara manual karena sudah disediakan fitur sequelize.sync()
              yang dapat otomatis membuat tabel sesuai model databasenya
 
 5. Jalankan Redis menggunakan docker
