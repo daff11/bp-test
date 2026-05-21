@@ -103,7 +103,6 @@ Projek backend API dengan fungsi melakukan create, read, update, dan delet pada 
   ```
 ---
 
----
 ## (Pre-Built in Code Challenge)
 - Get By Id Chapter (endpoint ini ada di dalam folder Routes dengan nama challengeRoutes.js)
   ```http
