@@ -111,4 +111,3 @@ Projek backend API dengan fungsi melakukan create, read, update, dan delet pada 
 3. Jika tidak terdapat cache, maka mengambil data dari query database
 4. Setelah itu, save data ke dalam Redis
 
-## Author by Daffala Viro Hidayat
