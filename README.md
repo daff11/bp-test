@@ -102,12 +102,14 @@ Projek backend API dengan fungsi melakukan create, read, update, dan delet pada 
   ```http
   POST http://localhost:3000/materials/seed/faker
   ```
+---
 
 ## Flow Redis pada Endpoint Get By Id
 1. Cek cache pada Redis
 2. Jika terdapat cache, maka langsung return data yang disimpan pada cache tersebut
 3. Jika tidak terdapat cache, maka mengambil data dari query database
 4. Setelah itu, save data ke dalam Redis
+---
 
 ### Catatan: tidak perlu membuat tabel secara manual karena dalam projek ini sudah dilengkapi fitur 
 ```javascript
