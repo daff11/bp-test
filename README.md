@@ -78,7 +78,6 @@ Projek backend API dengan fungsi melakukan create, read, update, dan delet pada 
   GET http://localhost:3000/materials/:id
   ```
   Endpoint ini menggunakan Redis serta BullMQ
-  Ganti Atribut :id sesuai dengan id yang diinginkan 
 
 - Update Material
   ```http
@@ -104,7 +103,18 @@ Projek backend API dengan fungsi melakukan create, read, update, dan delet pada 
   ```
 ---
 
-## Flow Redis pada Endpoint Get By Id
+---
+## (Pre-Built in Code Challenge)
+- Get By Id Chapter (endpoint ini ada di dalam folder Routes dengan nama challengeRoutes.js)
+  ```http
+  GET /books/:id/chapters/:chapter_id
+  ```
+  Endpoint ini menggunakan Redis serta BullMQ
+  
+- Controller yang sudah dioptimalkan ada di folder Controllers dengan nama file challengeController.js
+---
+
+## Flow Redis pada Endpoint Get Chapter By Id
 1. Cek cache pada Redis
 2. Jika terdapat cache, maka langsung return data yang disimpan pada cache tersebut
 3. Jika tidak terdapat cache, maka mengambil data dari query database
