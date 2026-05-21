@@ -109,4 +109,8 @@ Projek backend API dengan fungsi melakukan create, read, update, dan delet pada 
 3. Jika tidak terdapat cache, maka mengambil data dari query database
 4. Setelah itu, save data ke dalam Redis
 
-### Catatan: tidak perlu membuat tabel secara manual karena dalam projek ini sudah dilengkapi fitur sequelize.sync() yang dapat otomatis membuat tabel sesuai model databasenya
+### Catatan: tidak perlu membuat tabel secara manual karena dalam projek ini sudah dilengkapi fitur 
+```javascript
+sequelize.sync()
+``` 
+yang dapat otomatis membuat tabel sesuai model databasenya
