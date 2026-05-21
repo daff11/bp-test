@@ -6,10 +6,7 @@ const worker = new Worker(
     "emailQueue",
     async (job) => {
         console.log("Mengirimkan email...");
-
-        await new Promise((resolve) => setTimeout(resolve, 2000));
-
-        console.log(`Email terkirim ke: ${job.data.title}`);
+        console.log(`User membaca Bab ${job.data.title}`);
     },
     {
         connection: redis,

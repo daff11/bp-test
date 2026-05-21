@@ -67,7 +67,7 @@ exports.getMaterialById = async (req, res) => {
             key, JSON.stringify(material), "EX", 60
         );
 
-        // Add to Queue
+        // Kirim email via Queue
         await emailQueue.add("sendEmail", {
             title: material.title,
         });
