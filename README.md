@@ -104,13 +104,11 @@ Projek backend API dengan fungsi melakukan create, read, update, dan delet pada 
 ---
 
 ## (Pre-Built in Code Challenge)
-- Get By Id Chapter (endpoint ini ada di dalam folder Routes dengan nama challengeRoutes.js)
+Get By Id Chapter (endpoint ini ada di dalam folder Routes dengan nama challengeRoutes.js)
   ```http
   GET /books/:id/chapters/:chapter_id
   ```
   Endpoint ini menggunakan Redis serta BullMQ
-  
-- Controller yang sudah dioptimalkan menggunakan caching Redis serta queue BullMQ ada di dalam folder Controllers dengan nama file challengeController.js
 ---
 
 ## Flow Redis pada Endpoint Get Chapter By Id
