@@ -110,7 +110,7 @@ Projek backend API dengan fungsi melakukan create, read, update, dan delet pada 
   ```
   Endpoint ini menggunakan Redis serta BullMQ
   
-- Controller yang sudah dioptimalkan ada di folder Controllers dengan nama file challengeController.js
+- Controller yang sudah dioptimalkan menggunakan caching Redis serta queue BullMQ ada di dalam folder Controllers dengan nama file challengeController.js
 ---
 
 ## Flow Redis pada Endpoint Get Chapter By Id
