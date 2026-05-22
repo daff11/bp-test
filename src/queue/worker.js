@@ -1,6 +1,5 @@
 const {Worker} = require("bullmq");
 const redis = require("../config/redis");
-const { resolve } = require("node:dns");
 
 const worker = new Worker(
     "emailQueue",

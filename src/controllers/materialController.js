@@ -54,7 +54,7 @@ exports.getMaterialById = async (req, res) => {
         }
         console.log("Redis Miss");
 
-        // Jika redis miss maka ambil dari DB
+        // else
         const material = await Material.findByPk(id);
         if(!material) {
             return res.status(404).json({
@@ -62,12 +62,10 @@ exports.getMaterialById = async (req, res) => {
             });
         }
 
-        // Save Cache dengan TTL 60 dtk
         await redis.set(
             key, JSON.stringify(material), "EX", 60
         );
 
-        // Kirim email via Queue
         await emailQueue.add("sendEmail", {
             title: material.title,
         });

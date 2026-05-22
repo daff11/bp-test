@@ -6,7 +6,7 @@ app.get("/books/:id/chapters/:chapter_id", async (req, res) => {
         const {chapter_id} = req.params;
         const cacheKey = `chapter:${chapter_id}`;
 
-        // Validasi Cache, jika ada maka
+        // Cek cache
         const cached = await redis.get(cacheKey);
         if (cached) {
             const chapter = JSON.parse(cached);
